@@ -2,7 +2,7 @@
 
 Web pages for apps by **Shahin**: support and privacy pages for every app. Kept in the private GitHub repo
 `Shah91n/apps` and published free by Cloudflare Pages, which redeploys on every push to `main`.
-Link: SITE (filled in after the first deploy)
+Link: https://shahinapps.pages.dev/
 
 | Page | URL | Used for |
 |---|---|---|

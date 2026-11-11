@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apps by Shahin</title>
-  <meta name="description" content="Simple, calm apps by Shahin. Free, with no ads and no tracking.">
+  <meta name="description" content="Apps by Shahin, with the support and privacy pages for each app.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
@@ -28,25 +28,28 @@
     </svg>
   </header>
 
-  <div class="only-ar" lang="ar" dir="rtl">
-    <p class="tagline">تطبيقات بسيطة وهادئة، مجانية وبلا إعلانات ولا تتبّع.</p>
-    <section class="card">
-      <a class="app-link" href="adwamuha/" data-keep-lang>
-        <img src="adwamuha/icon.png" width="64" height="64" alt="">
-        <div><strong>أَدْوَمُهَا</strong><span>دقائق هادئة مع أذكارك كل يوم.</span></div>
-      </a>
-    </section>
-  </div>
+  <h2 class="apps-title"><span class="only-ar" lang="ar">التطبيقات</span><span class="only-en" lang="en">Apps</span></h2>
 
-  <div class="only-en" lang="en" dir="ltr">
-    <p class="tagline">Simple, calm apps. Free, with no ads and no tracking.</p>
-    <section class="card">
-      <a class="app-link" href="adwamuha/" data-keep-lang>
-        <img src="adwamuha/icon.png" width="64" height="64" alt="">
-        <div><strong>Adwamuha · أَدْوَمُهَا</strong><span>A few calm minutes with your azkar, every day.</span></div>
-      </a>
-    </section>
-  </div>
+  <!-- One card per app, one per row. To add an app: copy an <a class="app-card"> block and change
+       its link, icon, names and line. The "coming soon" card stays last; remove it if you like. -->
+  <nav class="apps" aria-label="Apps">
+    <a class="app-card" href="adwamuha/" data-keep-lang>
+      <img src="adwamuha/icon.png" width="64" height="64" alt="">
+      <div>
+        <strong class="only-ar" lang="ar">أَدْوَمُهَا</strong>
+        <strong class="only-en" lang="en">Adwamuha · أَدْوَمُهَا</strong>
+        <span class="only-ar" lang="ar">دقائق هادئة مع أذكارك كل يوم. مجاني، بلا إعلانات ولا تتبّع.</span>
+        <span class="only-en" lang="en">A few calm minutes with your azkar, every day. Free, no ads, no tracking.</span>
+      </div>
+    </a>
+    <div class="app-card soon" aria-hidden="true">
+      <span class="soon-icon">+</span>
+      <div>
+        <span class="only-ar" lang="ar">تطبيقات أخرى قريبًا</span>
+        <span class="only-en" lang="en">More apps soon</span>
+      </div>
+    </div>
+  </nav>
 
   <footer>© 2026 Shahin</footer>
 </main>
